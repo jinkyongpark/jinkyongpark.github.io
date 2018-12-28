@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "힙"
+subtitle: "by python"
+date:   2018-12-28 08:43:59
+author: kyong
+categories: [datastructure]
+---
+
+class minheap:
+    def __init__(self, a):
+        self.lst = [None]
+    def __init__(self,a):
+        self.lst=[None]+a[:]
+        for i in range(len(self.lst)//2,0,-1):
+            self.heapify(i)
+
+    def heapify(self,i):
+        left = self.leftchild(i)
+        right = self.rightchild(i)
+        small = i
+        if left <=len(self.lst)-1 and self.lst[left]<self.lst[small]:
+            small = left
+        if right <=len(self.lst)-1 and self.lst[right]<self.lst[small]:
+            small = right
+        if small != i: #small이 자신(i) 아니라면
+            self.swap(i,small)
+            self.heapify(small)
+    def leftchild(self,idx):
+        return idx*2
+    def rightchild(self,idx):
+        return idx*2+1
+    def parent(self,idx):
+        return idx/2
+    def insert(self,n):
+        self.lst.append(n)
+        i = len(self.lst)-1
+        while i>1: #idx가 root가 될때까지
+            parent = self.parent(i)
+            if self.lst[i]<self.queue[parent]:
+                self.swap(i,parent)
+                i = parent
+            else:
+                break
+    def delete(self):
+        self.swap(1,len(self.lst)-1)
+        self.lst.pop(len(self.lst)-1)
+        self.heapify(1)
+
+    def swap (self,a,b):
+        self.lst[a],self.lst[b]=self.lst[b],self.lst[a]
+
+    def __del__(self):
+        for i in range(len(l)):
+            self.delete()
+            print(self.lst)
+
+
+
+
+l =[9,1,22,4,0,-1,1,22,100,10]
+l1=[7,12,5,2,76,12,4,63,8,54]
+h =minheap(l)
+print(h.lst)
+
+
