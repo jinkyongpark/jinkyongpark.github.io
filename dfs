@@ -1,0 +1,32 @@
+#dfs구현
+#방문순서 : 끝까지들어감 - (하나돌아와서 방문하지않은 노드가있으면거기로 쭉들어감)^반복~ root노드까지확인할때까지 backtracking
+'''
+    A
+   B C
+  DE-F
+'''
+
+
+#graph표현 방식으로는 인접리스트와 인접행렬이있다.
+#노드개수에 비해 엣지 개수가 훨씬 적은 그래프(sparse graph)라면 인접 행렬보다는 인접리
+#스트를 사용하여 탐색하는게 효율적이다.
+graph = {'A': set(['B', 'C']),
+         'B': set(['A', 'D', 'E']),
+         'C': set(['A', 'F']),
+         'D': set(['B']),
+         'E': set(['B', 'F']),
+         'F': set(['C', 'E'])}
+
+def dfs(graph,start):
+    visited =[]
+    stack = [start]
+
+    while stack:
+        n = stack.pop()
+        if n not in visited:
+            visited.append(n)
+            stack +=graph[n] -set(visited)
+            print(stack)
+    return visited
+
+print(dfs(graph,'A'))
