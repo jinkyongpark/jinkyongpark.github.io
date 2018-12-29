@@ -1,0 +1,36 @@
+#bfs구현
+#방문순서 : 깊이1 - 깊이2 - 깊이3
+'''
+    A
+   B C
+  DE-F
+'''
+
+import queue
+
+#graph표현 방식으로는 인접리스트와 인접행렬이있다.
+#노드개수에 비해 엣지 개수가 훨씬 적은 그래프라면 인접 행렬보다는 인접리
+#스트를 사용하여 탐색하는게 효율적이다.
+graph = {'A': set(['B', 'C']),
+         'B': set(['A', 'D', 'E']),
+         'C': set(['A', 'F']),
+         'D': set(['B']),
+         'E': set(['B', 'F']),
+         'F': set(['C', 'E'])}
+
+
+#q=queue.Queue()
+
+def bfs(graph, start):
+    visited =[]
+    queue = [start]
+
+    while queue:
+        n = queue.pop(0)
+        if n not in visited:
+            visited.append(n)
+            queue +=graph[n] -set(visited)
+        print(visited)
+    return visited
+
+bfs(graph,'A')
