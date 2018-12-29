@@ -19,8 +19,6 @@ graph = {'A': set(['B', 'C']),
          'F': set(['C', 'E'])}
 
 
-#q=queue.Queue()
-
 def bfs(graph, start):
     visited =[]
     queue = [start]
@@ -32,5 +30,20 @@ def bfs(graph, start):
             queue +=graph[n] -set(visited)
         print(visited)
     return visited
+def bfs_paths(graph, start, goal):
+    queue = [(start,[start])]
 
+    result = []
+
+    while queue:
+        n,path = queue.pop(0)
+        #print(path)
+        if n ==goal:
+            result.append(path)
+        else:
+            for m in graph[n]-set(path):
+                queue.append((m,path+[m]))
+                print(queue)
+    return result
 bfs(graph,'A')
+print(bfs_paths(graph,'A','F'))
