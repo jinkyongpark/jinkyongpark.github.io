@@ -7,7 +7,7 @@ date:   2019-01-03 12:36:01
 categories: [algorithm]
 ---
 
-'''
+~~~
 // sort.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
@@ -57,4 +57,4 @@ int main()
 	for(int i=0;i<arr.size();i++)
 		cout << arr[i] << " ";
 }
-'''
+~~~
