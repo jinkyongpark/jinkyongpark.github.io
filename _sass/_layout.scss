@@ -260,20 +260,20 @@ pre code.hljs {
 		}
 		.post-header-container {
 			.scrim {
-				padding: 2em 1em 1em 1em;
+				padding: 0.1em 0.1em 0.1em 0.1em;
 			}
 		}
 		.post-meta {
-			padding-bottom: 1em;
+			padding-bottom: 0.1em;
 		}
 		.post-content {
-			padding: 0.5em;
+			padding: 0.1em;
 		}
 		.tags {
-			font-size: 0.9em;
+			font-size: 0.1em;
 		}
 		.rss {
-			margin: 1em 0 0 0;
+			margin: 0.1em 0 0 0;
 			@include span-columns(12);
 			@include media ($tablet) {
 				margin: 1em 0;
@@ -282,7 +282,7 @@ pre code.hljs {
 		}
 		.share {
 			font-weight: bold;
-			margin: 0 0 1em 0;
+			margin: 0 0 0.1em 0;
 			@include span-columns(12);
 			@include media ($tablet) {
 				@include span-columns(6);
@@ -290,7 +290,7 @@ pre code.hljs {
 				text-align: right;
 			}
 			a {
-				width: 1em;
+				width: 0.1em;
 				padding: 0 0.25em;
 				text-decoration: none;
 			}
