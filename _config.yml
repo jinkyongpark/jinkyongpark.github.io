@@ -18,7 +18,7 @@ description: >
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl: /kyong/ # the subpath of your site, e.g. /blog/
 url: "http://jinkyongpark.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.JPG"
 logo: "/assets/logo.png"
@@ -53,6 +53,10 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: Algorithm
+    desc: "algorithm description."
+  - cat: Datastructure
+    desc: "datastructure description."
 
 # Social icons and sharing options
 #
