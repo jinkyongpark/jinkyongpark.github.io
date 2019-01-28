@@ -50,10 +50,10 @@ pre code.hljs {
     top: -9px;
     display: block;
     background: $divider-color;
-    width: 70%;
+    width: 100%;
     height: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right:0;
     border-radius: 50%;
   }
   .two {
@@ -61,10 +61,10 @@ pre code.hljs {
     top: -26px;
     display: block;
     background: $white;
-    width: 70%x;
+    width: 100%;
     height: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 50%;
   }
 }
