@@ -8,7 +8,7 @@ categories: [algorithm]
 <h3>다익스트라알고리즘</h3>
 
 
-<code>
+~~~
 #include <iostream>
 
 #include <vector>
@@ -110,9 +110,7 @@ vector<int> dijkstra()
 	return w;
 
 }
-</code>
- 
-<code>
+
 int main()
 
 {
@@ -168,7 +166,6 @@ int main()
 	return 0;
 
 }
-</code>
  
 
-<p>참고 링크 < a href="https://wkdtjsgur100.github.io/python-dijkstra/">click</a></p>
+<a href="https://wkdtjsgur100.github.io/python-dijkstra/"title=>click</a>
