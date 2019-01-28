@@ -1,10 +1,13 @@
 ---
 layout: post
 title:  "최소힙정렬"
-subtitle: ""
+subtitle: "using python"
 date:   2019-12-28 12:36:01
 categories: [algorithm]
 ---
+
+<h3>파이썬을 이용하여 힙을 구현했습니다.</h3>
+~~~
 class minheap:
 
     def __init__(self):
@@ -67,3 +70,4 @@ l =[9,1,22,4,0,-1,1,22,100,10]
 l1=[7,12,5,2,76,12,4,63,8,54]
 h =minheap(l)
 print(h.lst)
+~~~
