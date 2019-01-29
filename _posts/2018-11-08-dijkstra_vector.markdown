@@ -4,12 +4,24 @@ title:  "다익스트라 알고리즘 "
 subtitle: "using vector"
 date:   2018-11-08 2:23:01
 categories: [algorithm]
+
 ---
-<h3>다익스트라알고리즘</h3>
 
 
-~~~
 
+
+
+###다익스트라알고리즘
+
+#####최단거리알고리즘중하나다.
+
+
+
+
+
+------
+
+```
 
 #include <iostream>
 
@@ -168,6 +180,14 @@ int main()
 	return 0;
 
 }
- ~~~
+```
 
-<a href="https://wkdtjsgur100.github.io/python-dijkstra/"title=>click</a>
+
+
+
+
+참고 : 
+
+[https://wkdtjsgur100.github.io/python-dijkstra/]: click
+[부산대학교 컴퓨터공학과]: 
+
