@@ -41,7 +41,7 @@ pre code.hljs {
 .page-divider {
 	$divider-color: $light-gray;
   display: block;
-  width: 80%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   border-top: 1px solid $divider-color;
@@ -50,21 +50,21 @@ pre code.hljs {
     top: -9px;
     display: block;
     background: $divider-color;
-    width: 100px;
-    height: 10px;
-    margin-left: 0;
-    margin-right:0;
-    border-radius: 80%;
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
   }
   .two {
     position: relative;
     top: -26px;
     display: block;
     background: $white;
-    width: 100px;
-    height: 10px;
-    margin-left: 0;
-    margin-right: 0;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
   }
 }
@@ -196,13 +196,13 @@ pre code.hljs {
 .page-content {
 	.wrapper {
 		@include outer-container;
-		padding: 0.5em;
+		padding: 1em;
 	}
 	/*
 	*	index.html
 	*/
 	.post-list {
-		padding-top: 0em !important;
+		padding-top: 1em !important;
 		@extend %default-ul;
 	}
 	.post-meta {
@@ -260,20 +260,20 @@ pre code.hljs {
 		}
 		.post-header-container {
 			.scrim {
-				padding: 0.1em 0.1em 0.1em 0.1em;
+				padding: 2em 1em 1em 1em;
 			}
 		}
 		.post-meta {
-			padding-bottom: 0.1em;
+			padding-bottom: 1em;
 		}
 		.post-content {
-			padding: 0;
+			padding: 1em 0;
 		}
 		.tags {
-			font-size: 0.1em;
+			font-size: 0.9em;
 		}
 		.rss {
-			margin: 0.1em 0 0 0;
+			margin: 1em 0 0 0;
 			@include span-columns(12);
 			@include media ($tablet) {
 				margin: 1em 0;
@@ -282,7 +282,7 @@ pre code.hljs {
 		}
 		.share {
 			font-weight: bold;
-			margin: 0 0 0.1em 0;
+			margin: 0 0 1em 0;
 			@include span-columns(12);
 			@include media ($tablet) {
 				@include span-columns(6);
@@ -290,7 +290,7 @@ pre code.hljs {
 				text-align: right;
 			}
 			a {
-				width: 0.1em;
+				width: 1em;
 				padding: 0 0.25em;
 				text-decoration: none;
 			}
