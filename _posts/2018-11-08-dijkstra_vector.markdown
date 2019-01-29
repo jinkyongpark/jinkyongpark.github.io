@@ -11,9 +11,9 @@ categories: [algorithm]
 
 
 
-###다익스트라알고리즘
+#### 다익스트라알고리즘
 
-#####최단거리알고리즘중하나다.
+최단거리알고리즘중하나다.
 
 
 
@@ -188,6 +188,6 @@ int main()
 
 참고 : 
 
-[https://wkdtjsgur100.github.io/python-dijkstra/]: click
-[부산대학교 컴퓨터공학과]: 
+[https://wkdtjsgur100.github.io/python-dijkstra/]: click1
+[부산대학교 컴퓨터공학과]: click2
 
