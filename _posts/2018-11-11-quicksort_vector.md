@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quicksort"
+title:  "quick정렬"
 subtitle: "using vector, pivot= left"
 date:   2018-11-11 03:08:01
 categories: [algorithm]
@@ -27,7 +27,9 @@ pivot은 *random*으로 정해야 복잡도가 좋지만 *left*로 설정했습�
 
 ​	Conquer(정복) : 부분집합의 원소들 중에서
 
-​			 (pivot보다작은 값들)   ,   (pivot보다 큰 값)으로 정렬한다.
+> ​			(pivot보다작은 값들)   ,   (pivot보다 큰 값)으로 정렬한다.
+>
+> 
 
 * 부분집합의 원소가 1개이하가 될 때까지 분할 정복이 반복됩니다.
 
@@ -82,19 +84,19 @@ void Quicksort(vector<int>& d, int left, int right)
 }
 ~~~
 
-
+<br>
 
 1. left와 right를 설정
 
-2. left는 pivot보다 작은 값이 나올때까지 이동 
+2. left는 pivot보다 작은 값이 나올때까지 이동, 
    right는 pivot보다 큰 value가 나올때까지 이동
 
 ​      여기서 중요한 조건은 `d[start]<=pivot && start <end`
 
 ​	`start<end`부분을 넣어주지 않으면
-   		-> ex : 5 4 3 2 1 에서 start가 범위를 넘어갈 수 있습니다.
+<br>-> ex : 5 4 3 2 1 에서 start가 범위를 넘어갈 수 있습니다.
 
-*`swap함수를 만들어 대체하면 더 좋은 코드가 될 수 있습니다.*`
+`swap함수를 만들어 대체하면 더 좋은 코드가 될 수 있습니다.`
 
 ~~~
 int main(void)
@@ -116,7 +118,7 @@ int main(void)
 }
 ~~~
 
-
+<br>
 
 N(리스트의 개수)를 입력받고 리스트의 값들을 입력받습니다.
 

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Merge sort"
@@ -6,8 +5,17 @@ subtitle: "using vector"
 date:   2019-01-03 12:36:01
 categories: [algorithm]
 ---
-<h3>vector를 사용해 구현한 mergesort입니다.</h3>
+
+## Mergesort
+
+
+
+##### vector를 사용해 구현한 병합정렬입니다.
+
+
+
 ~~~
+
 // sort.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
@@ -58,3 +66,4 @@ int main()
 		cout << arr[i] << " ";
 }
 ~~~
+

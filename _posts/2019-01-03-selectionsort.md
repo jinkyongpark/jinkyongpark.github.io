@@ -1,11 +1,20 @@
 ---
 layout: post
-title:  "선택정렬"
+title:  "selectionsort"
 subtitle: "using vector"
 date:   2019-01-03 12:36:01
 categories: [algorithm]
 ---
 
+## 선택정렬
+
+
+
+##### vector를 이용하여 구현한 선택정렬이다.
+
+
+
+~~~
 
 void selectionsort(vector<int>&v) {
 	int tmp = 0;
@@ -30,3 +39,5 @@ int main()
 	for(int i=0;i<arr.size();i++)
 		cout << arr[i] << " ";
 }
+~~~
+

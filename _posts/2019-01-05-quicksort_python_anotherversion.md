@@ -5,6 +5,17 @@ subtitle: "using python"
 date:   2019-01-05 12:36:01
 categories: [algorithm]
 ---
+## 퀵정렬
+
+python을 이용하여 구현한 퀵정렬이다.<br>
+
+pivot은 left로 설정하였다.<br>
+
+swap이 필요없고 c++로 구현한 퀵정렬보다 간단하다.<br>
+
+
+
+~~~
 def quicksort(lst):
     if len(lst)>1:
         pivot=lst[0]
@@ -30,3 +41,9 @@ for i in range(t):
 ans=quicksort(ans)
 for j in range(t):
     print(ans[j])
+
+
+~~~
+
+
+
