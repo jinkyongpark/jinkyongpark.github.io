@@ -6,7 +6,7 @@ date:   2019-12-28 12:36:01
 categories: [algorithm]
 ---
 
-## 최소힙정렬
+## MinHeapsort
 
 ##### 파이썬에서 작은순서대로 나열하는 최소힙을 구현하였다.
 

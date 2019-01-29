@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "퀵소트"
+title:  "퀵정렬 python"
 subtitle: "using python"
 date:   2019-01-05 12:36:01
 categories: [algorithm]
 ---
-## 퀵정렬
+## Quicksort
+
+
 
 python을 이용하여 구현한 퀵정렬이다.<br>
 

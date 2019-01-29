@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Merge sort"
+title:  "[병합정렬]"
 subtitle: "using vector"
 date:   2019-01-03 12:36:01
 categories: [algorithm]

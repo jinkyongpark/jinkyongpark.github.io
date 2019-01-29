@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "selectionsort"
+title:  "선택정렬"
 subtitle: "using vector"
 date:   2019-01-03 12:36:01
 categories: [algorithm]
 ---
 
-## 선택정렬
+## Selectionsort
 
 
 

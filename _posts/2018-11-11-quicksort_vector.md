@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "quick정렬"
+title:  "퀵정렬 c++"
 subtitle: "using vector, pivot= left"
 date:   2018-11-11 03:08:01
 categories: [algorithm]
@@ -122,12 +122,11 @@ int main(void)
 
 N(리스트의 개수)를 입력받고 리스트의 값들을 입력받습니다.
 
-
-ex : 
-
+~~~
 (5) 4  3  2 (1)     ->2번 swap
 
  1 (4) 3 (2) 5      ->1번 swap
 
  1  2  3  4  5
+~~~
 

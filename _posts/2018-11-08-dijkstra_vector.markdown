@@ -7,19 +7,13 @@ categories: [algorithm]
 
 ---
 
-
-
-
-
-#### 다익스트라알고리즘
+## Dijkstra algorithm
 
 최단거리알고리즘중하나다.
 
 
 
 
-
-------
 
 ```
 
