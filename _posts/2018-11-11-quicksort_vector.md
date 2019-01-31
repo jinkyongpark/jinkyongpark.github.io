@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "퀵정렬 c++"
+title:  "퀵정렬"
 subtitle: "c++,python, pivot= left"
 author : "kyong"
 date:   2018-11-11 03:08:01
