@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "퀵정렬 c++"
-subtitle: "using vector, pivot= left"
+subtitle: "c++,python, pivot= left"
+author : "kyong"
 date:   2018-11-11 03:08:01
 categories: [algorithm]
 ---
@@ -9,7 +10,7 @@ categories: [algorithm]
 
 
 
-##### c++의 vector를 사용해 구현한 퀵정렬입니다
+##### c++의 vector를 사용해 구현한 퀵정렬이다.
 
 
 
@@ -128,5 +129,57 @@ N(리스트의 개수)를 입력받고 리스트의 값들을 입력받습니다
  1 (4) 3 (2) 5      ->1번 swap
 
  1  2  3  4  5
+~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+python을 이용하여 구현한 퀵정렬이다.<br>
+
+pivot은 left로 설정하였다.<br>
+
+swap이 필요없고 c++로 구현한 퀵정렬보다 간단하다.<br>
+
+~~~
+def quicksort(lst):
+    if len(lst)>1:
+        pivot=lst[0]
+        left,mid,right=[],[],[]
+        for i in range(1,len(lst)):
+            if lst[i]<pivot:
+                left.append(lst[i])
+            elif lst[i]>pivot:
+                right.append(lst[i])
+            else:
+                mid.append(lst[i])
+        mid.append(pivot)
+        return quicksort(left)+mid+quicksort(right)
+    else:
+        return lst
+
+ans=[]
+t = int(input()) #갯수
+for i in range(t):
+    x=int(input())
+    ans.append(x)
+
+ans=quicksort(ans)
+for j in range(t):
+    print(ans[j])
+
+
 ~~~
 

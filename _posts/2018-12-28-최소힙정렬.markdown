@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "최소힙정렬"
-subtitle: "using python"
+subtitle: "python, c++"
 date:   2019-12-28 12:36:01
 categories: [algorithm]
 ---
@@ -76,3 +76,95 @@ l1=[7,12,5,2,76,12,4,63,8,54]
 h =minheap(l)
 print(h.lst)
 ~~~
+
+
+
+
+
+
+
+
+
+---
+
+
+
+c++로 구현한 최소힙정렬
+
+` 백준2751 `번을 해결할때 파이썬은 시간 초과 되었다.
+
+
+
+~~~
+
+#include <algorithm>
+#include <stdio.h>
+#include <vector>
+using namespace std;
+vector<int> l,m;
+
+void minheap(int x, int size)
+{
+	int left, right, p;
+	while (x < size)
+	{
+		left = x * 2 + 1;
+		right = x * 2 + 2;
+
+		if (left >= size && right >= size)
+			break;
+
+		p = x;
+		if (left < size && l[p] < l[left])
+			p = left;
+		if (right < size && l[p] < l[right])
+			p = right;
+		if (p == x)
+			break;
+
+
+		//swap
+		int tmp = l[x];
+		l[x] = l[p];
+		l[p] = tmp;
+		x = p;
+	}
+}
+
+
+int main() {
+	int n;
+	scanf_s("%d", &n);
+	l.resize(n);
+	m.resize(n);
+
+
+	for (int i =0 ; i < n; i++)
+		scanf_s("%d", &l[i]);
+
+	for (int i = n - 1 / 2; i >= 0; --i)
+		minheap(i, n);
+
+	for (int i = n - 1; i >= 0; --i)
+	{
+		m[i] = l[0];
+		l[0] = l[i];
+		minheap(0, i);
+	}
+
+	for (int a=0; a<m.size();a++)
+		printf("%d\n", m[a]);
+
+
+	return 0;
+}
+
+
+~~~
+
+
+
+
+
+[참고] (https://js1jj2sk3.tistory.com/57).
+

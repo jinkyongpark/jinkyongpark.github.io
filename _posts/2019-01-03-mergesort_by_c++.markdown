@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "병합정렬"
-subtitle: "using vector"
+subtitle: "c++ vector"
 date:   2019-01-03 12:36:01
 categories: [algorithm]
 ---
@@ -10,7 +10,7 @@ categories: [algorithm]
 
 
 
-##### vector를 사용해 구현한 병합정렬입니다.
+##### vector를 사용해 구현한 병합정렬이다.
 
 
 
