@@ -2,7 +2,7 @@
 layout: post
 title:  "Industrial IoT 보안 기술 "
 subtitle: "산업제어시스템"
-date:   2018-11-08 2:23:01
+date:   2018-11-01 2:23:01
 categories: [IoT]
 ---
 
