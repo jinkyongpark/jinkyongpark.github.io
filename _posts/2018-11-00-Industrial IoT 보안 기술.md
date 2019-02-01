@@ -56,7 +56,7 @@ categories: [IoT]
 
 - IP/web service 연동
 
-![img](file:///C:\Users\pc\AppData\Local\Temp\OICE_827EF895-6DA0-422C-8F28-F86C20A780A8.0\msohtmlclip1\01\clip_image002.jpg)
+![img](https://github.com/jinkyongpark/jinkyongpark/github.io/assets/clip_image002.jpg)
 
 
 
