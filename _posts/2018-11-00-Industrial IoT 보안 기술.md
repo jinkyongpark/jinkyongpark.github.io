@@ -2,7 +2,7 @@
 layout: post
 title:  "Industrial IoT 보안 기술 "
 subtitle: "산업제어시스템"
-date:   2018-11-01 2:23:01
+date:   2019-02-01 2:23:01
 categories: [IoT]
 ---
 
@@ -16,7 +16,9 @@ categories: [IoT]
 
 
 
-#### 1.  **산업 제어 시스템 개요**
+
+
+### 1.  **산업 제어 시스템 개요**
 
 > CADA, PCS, DCS, Automation, PLC등 다양한 통신 프로토콜, OS, 응용 기술로 구성
 >
@@ -26,13 +28,17 @@ categories: [IoT]
 
 
 
+
+
 - Example
 
   - SCADA : 산업 공정이나 인프라, 생산설비/공정을 모니터링하고 제어하는 시스템
 
   - DCS : 제조 시스템 및 공정 제어 시스템으로서 SCADA는 데이터수집/모니터링에 중점을 두는 반면, DCS는 공정 제어에 중점을 둠
 
-  
+
+
+
 
 - 주요 특성
 
@@ -44,7 +50,9 @@ categories: [IoT]
 
   - 초기 단계에서는 보안 고려 x
 
-    
+
+
+
 
 - IP/web service 연동
 
@@ -52,11 +60,21 @@ categories: [IoT]
 
 
 
+
+
 - 산업 제어 시스템과 인터넷 연결 
 
   : 전통적인 제어 시스템 통신 기술 + ip 네트워크 -> 보안 취약성 증대
 
-#### 2. 제어 시스템 보안 특성
+
+
+
+
+
+
+### 2. 제어 시스템 보안 특성
+
+
 
 
 
@@ -68,7 +86,9 @@ categories: [IoT]
 
   - Availability : 가용성, 서비스의 가용성 제공
 
-    
+
+
+
 
 - ICS의 주요 보안 요구 사항 (우선순위 있다)
 
@@ -78,6 +98,8 @@ categories: [IoT]
     : 암호를 통한 기밀성, 인증/인가, 추가된 보안들이 가용성 하락
 
     : 보안성 강화시 가용성을 동시에 제공해야한다.
+
+
 
 
 
@@ -108,9 +130,13 @@ categories: [IoT]
 
 
 
+
+
 - ICS에 대한 공격 영향
 
   : 인명손실, 국가인프라 손상, 생산차질, 소송, 기업체신뢰 상실, 경쟁력 상실, 경제적손실, 환경파괴
+
+
 
 
 
@@ -126,6 +152,14 @@ categories: [IoT]
 
   
 
+
+
 ### 단어 뜻
 
 >  Proprietary 프로토콜 : [원거리 통신](https://translate.googleusercontent.com/translate_c?depth=1&hl=ko&prev=search&rurl=translate.google.co.kr&sl=en&sp=nmt4&u=https://en.wikipedia.org/wiki/Telecommunications&xid=17259,15700019,15700043,15700124,15700149,15700186,15700190,15700201,15700237,15700242&usg=ALkJrhgR3yQe3AhJAW9Cay_psrvalEHo_Q) 에서 **독점** **프로토콜** 은 단일 조직 또는 개인이 소유 한 [통신 프로토콜](https://translate.googleusercontent.com/translate_c?depth=1&hl=ko&prev=search&rurl=translate.google.co.kr&sl=en&sp=nmt4&u=https://en.wikipedia.org/wiki/Communications_protocol&xid=17259,15700019,15700043,15700124,15700149,15700186,15700190,15700201,15700237,15700242&usg=ALkJrhhSIGLaCedxq8jCTWSihAa1-EtX7Q) 입니다. 
+
+
+
+
+
+> 부산대학교 iot연구실 자료참조
