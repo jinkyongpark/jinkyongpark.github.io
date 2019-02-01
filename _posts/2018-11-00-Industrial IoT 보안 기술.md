@@ -26,7 +26,7 @@ categories: [IoT]
 >
 > 발전소, 전력망, 철도, 정유공장, 공장 자동화 등 다양한 응용 환경에서 사용됨
 
-
+<br>
 
 
 
@@ -38,7 +38,7 @@ categories: [IoT]
 
 
 
-
+<br>
 
 - 주요 특성
 
@@ -50,17 +50,17 @@ categories: [IoT]
 
   - 초기 단계에서는 보안 고려 x  
 
-
+<br>
 
 
 
 - IP/web service 연동
 
-![img](https://github.com/jinkyongpark/jinkyongpark/github.io/assets/clip_image002.jpg)
+![img](/assets/clip_image002.jpg)
 
 
 
-
+<br>
 
 - 산업 제어 시스템과 인터넷 연결 
 
@@ -68,7 +68,7 @@ categories: [IoT]
 
 
 
-
+<br>
 
 
 
@@ -76,7 +76,7 @@ categories: [IoT]
 
 
 
-
+<br>
 
 - 기존 IT시스템의 보안 요구 사항
 
@@ -86,7 +86,7 @@ categories: [IoT]
 
   - Availability : 가용성, 서비스의 가용성 제공  
 
-
+<br>
 
 
 
@@ -101,7 +101,7 @@ categories: [IoT]
 
 
 
-
+<br>
 
 - ICS특성과 보안 취약성
   - 보안 취약성이 있는 통신 프로토콜 사용
@@ -130,15 +130,13 @@ categories: [IoT]
 
 
 
-
+<br>
 
 - ICS에 대한 공격 영향
 
   : 인명손실, 국가인프라 손상, 생산차질, 소송, 기업체신뢰 상실, 경쟁력 상실, 경제적손실, 환경파괴  
 
-
-
-
+<br>
 
 ### Summary
 
@@ -146,13 +144,13 @@ categories: [IoT]
 
 >   CIA에서 가용성의 비중이 큼
 >
-> >  산업 제어 시스템의 구성요소에 많은 보안 취약점 존재
+> 산업 제어 시스템의 구성요소에 많은 보안 취약점 존재
 >
 >   Proprietary 프로토콜을 많이 사용하므로 기존 보안 솔루션의 완성도는 떨어짐  
 
   
 
-
+<br>
 
 ### 단어 뜻
 
@@ -160,6 +158,6 @@ categories: [IoT]
 
 
 
-
+<br>
 
 > 부산대학교 iot연구실 자료참조
