@@ -8,7 +8,7 @@ categories: [algorithm]
 
 ---
 
-## Union-Find 알고리즘
+## Kruskal 알고리즘
 
 
 
