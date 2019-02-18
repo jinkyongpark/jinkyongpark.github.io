@@ -47,3 +47,51 @@ D[][] : 모든경로에 대한 비용을 저장
 P[][] : 직전의정점을저장한 테이블
 ~~~
 
+
+
+
+
+
+
+~~~
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+const int INF = 1000000000;
+int main() {
+	int n, m, dist[101][101];
+	scanf_s("%d %d", &n, &m);
+
+	//초기화
+	for (int i = 1; i <= n; i++)
+		for (int j = 1; j <= n; j++)
+			dist[i][j] = i == j ? 0 : INF; 
+	//입력
+	for (int i = 0; i < m; i++)
+	{
+		int a, b, c;
+		scanf_s("%d %d %d",&a,&b,&c);
+		dist[a][b] = min(dist[a][b], c);
+	}
+	//플로이드 와샬
+	for (int k = 1; k <= n; k++)
+		for (int i = 1; i <= n; i++)
+			for (int j = 1; j <= n; j++)
+				dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+
+	//출력
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= n; j++)
+			printf("%d ", dist[i][j]);
+		printf("\n");
+	}
+	return 0;
+}
+~~~
+
+
+
+
+
+참고 : http://blog.naver.com/PostView.nhn?blogId=kks227&logNo=220797649276&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
