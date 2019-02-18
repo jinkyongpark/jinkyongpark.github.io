@@ -13,7 +13,7 @@ categories: [algorithm]
 
 하나의 정점에서 다른 모든 정점까지의 최단거리를 구한다.
 
-
+<br><br>
 
 입력예시
 
@@ -29,21 +29,52 @@ categories: [algorithm]
 5 4 2
 ~~~
 
+<br><br>
 
-
-Suedo-code
+psuedo-code
 
 ~~~
-visit[] : vertex갯수 all False
-w[] : 시작점에서 거리표시 all INF
+d[a][b]: a에서 b사이의 거리 , V x V행렬 
+visit[] : 방문여부 ,V, all False
+w[] : 시작점에서 거리표시,V, all INF
 
 w[start]= 0; //자기자신의 거리
 
 loop(1):
-	minVal = INF, nearV //minVal 
+	minVal = INF : 가장가까운노드의 거리
+	nearV : 가장가까운 노드
+	
+	loop(x : 0~V):            
+		if(방문하지 않음 and minVal보다 작은 거리):
+			minVal = w[x]
+			nearV = x
+		
+	if(minVal과  INF값이 같음): stop
+	
+	visit[nearV] = true
+	
+	loop(x : 0~V):
+		if(방문한 노드): continue
+		
+	   //(start~x) comp (start~nearV)+(nearV~x)
+		if (w[x] > w[nearV] + d[nearV][x]):
+        	w[x] = w[nearV] + d[nearV][x]
+		
 ~~~
 
 
+
+1. 가장가까운거리를 가진  노드(nearV) 찾기 (loop)
+
+2. 노드 방문
+
+3. 원래거리와 nearV를지나쳐가는 거리 비교하여 update(loop)
+
+   <br>
+
+   <br>
+
+    
 
 ```
 #include"pch.h"
@@ -143,5 +174,5 @@ int main()
 참고 : 
 
 [https://wkdtjsgur100.github.io/python-dijkstra/]: click	"click1"
-[부산대학교 컴퓨터공학과]: click1	"click2"
+
 
