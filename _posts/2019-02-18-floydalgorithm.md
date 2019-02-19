@@ -51,7 +51,7 @@ P[][] : 직전의정점을저장한 테이블
 
 
 
-
+//백준11404
 
 ~~~
 #include <cstdio>
@@ -60,17 +60,17 @@ using namespace std;
 const int INF = 1000000000;
 int main() {
 	int n, m, dist[101][101];
-	scanf_s("%d %d", &n, &m);
+	scanf("%d %d", &n, &m);
 
 	//초기화
 	for (int i = 1; i <= n; i++)
 		for (int j = 1; j <= n; j++)
-			dist[i][j] = i == j ? 0 : INF; 
+			dist[i][j] = i == j ? 0 : INF;
 	//입력
 	for (int i = 0; i < m; i++)
 	{
 		int a, b, c;
-		scanf_s("%d %d %d",&a,&b,&c);
+		scanf("%d %d %d", &a, &b, &c);
 		dist[a][b] = min(dist[a][b], c);
 	}
 	//플로이드 와샬
@@ -82,8 +82,11 @@ int main() {
 	//출력
 	for (int i = 1; i <= n; i++)
 	{
-		for (int j = 1; j <= n; j++)
+		for (int j = 1; j <= n; j++) {
+			if (dist[i][j] == INF) //값이안들어간부분은 INF로 되어있으므로 다시 0으로 바꿔준다.
+				dist[i][j] = 0;
 			printf("%d ", dist[i][j]);
+		}
 		printf("\n");
 	}
 	return 0;
